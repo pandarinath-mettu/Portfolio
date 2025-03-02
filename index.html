@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="container">
+      <a href="#home" class="logo">My Portfolio</a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="home-section">
+    <div class="container">
+        <div class="profile-picture">
+            <img src="/profilepic.jpg" alt="PANDARINATH">
+          </div>
+      <h1>Hi, I'm <span class="highlight">PANDARINATH</span></h1>
+      <p>A passionate developer building modern web applications.</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I'm Pandarinath Mettu, a Frontend Web Developer with a passion for creating modern, responsive, and user-friendly web applications. I have experience in Full-Stack Development and enjoy turning ideas into functional, visually appealing digital experiences.
+
+        I’m always eager to learn new technologies, optimize performance, and build seamless user interfaces. My goal is to develop clean, efficient, and scalable solutions that enhance usability and engagement.</p>
+    </div>
+  </section>
+
+ <!-- Projects Section -->
+<section id="projects" class="projects-section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <!-- Digital News Portal Project -->
+        <div class="project-card">
+          <h3>Digital News Portal for Community Updates</h3>
+          <p>
+            <strong>HTML | CSS | JavaScript | SQL | Python</strong><br>
+            Developed a full-stack community news portal with user authentication, an admin panel, and a responsive UI. Enabled users to share and engage with local news through comments and likes.
+          </p>
+          <a href="https://github.com/pandarinath-mettu/Digital_news_portal" target="_blank" class="btn">GitHub Repository</a>
+        </div>
+        <!-- CareBot Project -->
+        <div class="project-card">
+          <h3>CareBot</h3>
+          <p>An NLP-powered chatbot providing medicine details, usage, and side effects. Ensures up-to-date and reliable medical information. Optimized for efficient and accurate user interactions.</p>
+          <a href="https://github.com/pandarinath-mettu/Care_bot" target="_blank" class="btn">GitHub Repository</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="https://carebot.streamlit.app/" target="_blank" class="btn">Live Link</a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Experience Section -->
+<section id="experience" class="experience-section">
+    <div class="container">
+      <h2>Experience</h2>
+      <!-- AI-ML Intern -->
+      <div class="experience-item">
+        <h3>AI-ML Intern - All India Council for Technical Education (AICTE)</h3>
+        <p><strong>Oct 2024 – Dec 2024 · 3 mos | Remote</strong></p>
+        <ul>
+          <li>Developed foundational skills in Artificial Intelligence and Machine Learning.</li>
+          <li>Worked on projects using Python, TensorFlow, and data visualization tools.</li>
+          <li>Gained expertise in Artificial Intelligence (AI), Machine Learning, and other related skills.</li>
+          <li><strong>Certification Verification:</strong> <a href="https://aictecert.eduskillsfoundation.org/pages/home/verify.php?cert=3379cd8a75147d900fc7996644a9839a" target="_blank">View Certificate</a></li>
+        </ul>
+      </div>
+      <!-- AI/ML Intern - TechSaksham -->
+       
+      <div class="experience-item">
+        <h3>AI/ML Intern - TechSaksham (Supported by Microsoft & SAP)</h3>
+        <p><strong>Nov 2024 – Dec 2024 | Remote</strong></p>
+        <ul>
+          <li>Developed MediBot, an NLP-based chatbot that provides accurate information on medications, including usage and side effects.</li>
+          <li>Implemented TF-IDF vectorization and Logistic Regression to enhance query accuracy.</li>
+          <li>Deployed the application using Streamlit, created a live demo, and published the project on GitHub.</li>
+          <li>Gained hands-on experience in AI and NLP under the mentorship of professionals from Microsoft, SAP, and AICTE.</li>
+          <li><strong>Certification Verification:</strong> <a href="https://techsaksham.org/verify-aicte-certificate/TSPIN24_604864" target="_blank">View Certificate</a></li>
+        </ul>
+      </div>
+      <!-- Full-stack Developer Intern - OCTACOMM -->
+      <div class="experience-item">
+        <h3>Full-stack Developer Intern - OCTACOMM</h3>
+        <p><strong>May 2024 | Hyderabad, India</strong></p>
+        <ul>
+          <li>Developed a community news portal using HTML, CSS, JavaScript, SQL, and Python.</li>
+          <li>Ensured a seamless user experience with dynamic content loading.</li>
+          <li>Collaborated with cross-functional teams to gather requirements and implement new features.</li>
+          <li>Optimized website performance and responsiveness to enhance user engagement.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+ <!-- Contact Section -->
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <form id="contact-form" name="submit-to-google-sheet">
+      <input type="text" name="Name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="Message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn" onclick="showAlert()">Send Message</button>
+    </form>
+
+    <!-- Social Links -->
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/pandarinathmettu/" target="_blank" class="social-link">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn Logo" class="social-icon">
+        LinkedIn
+      </a>
+      <a href="https://github.com/pandarinath-mettu" target="_blank" class="social-link">
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub Logo" class="social-icon">
+        GitHub
+      </a>
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 pandarinth. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwxqGeuSTfCbUVbvE9bMXHx-4xC-xfntQqvUEgdfFhX4CbIx0Dmgb3zaOqOhHKGgJcG/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+    function showAlert() {
+        alert("Thank you for submitting!");
+      }
+  </script>
+</body>
+</html>
